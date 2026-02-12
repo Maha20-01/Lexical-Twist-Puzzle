@@ -17,6 +17,13 @@ public class LexicalTwistPuzzle {
             System.out.println("Invalid word input. Only single words allowed.");
             return;
         }
+        String reversed = new StringBuilder(word1).reverse().toString();
+
+        if(reversed.equalsIgnoreCase(word2)) {
+            System.out.println("Words are reverse of each other");
+        } else {
+            System.out.println("Words are NOT reverse of each other");
+        }
 
         System.out.println("You entered: " + word1 + " and " + word2);
 
